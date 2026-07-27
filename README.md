@@ -19,3 +19,22 @@ But it kept drifting to those short punchy sentences that hammer you, the sort o
 I kept having to re-prompt it, so you'll see a change in the narration style from book to book.
 
 I kept prompting a single Claude session to generate the next book, but this failed after book 22, because of context lengths I suppose. So I took the STYLE-BOOK and started a new session. You can see how much book 22 looks different from book 23. But really, the content is the same, so I'm not going to try to clean it up. You get to see things as I saw it, and regenerate things if you want something different.
+
+## Fork note and generated editions
+
+This fork preserves attribution to the original project and compiles the 24
+Markdown files in `book/` into one PDF and one EPUB with matching content. See
+`ATTRIBUTION.md` for source attribution and licensing notes.
+
+Generated files are written to `dist/`:
+
+- `ai-odyssey-complete.md`
+- `ai-odyssey-complete.html`
+- `ai-odyssey-complete.pdf`
+- `ai-odyssey-complete.epub`
+
+Build command:
+
+```sh
+bash scripts/build-book.sh
+```
